@@ -16,6 +16,10 @@ dependencies:
 
   cupertino_icons: ^1.0.8
   flutter_bloc: ^8.1.6
+  image_picker: ^1.1.2
+  http: ^1.2.2
+  image: ^4.3.0
+  equatable: ^2.0.7
 
 dev_dependencies:
   flutter_test:
@@ -38,6 +42,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
       - assets/
+      - assets/GeoLens.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

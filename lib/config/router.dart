@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:geolens/bloc/upload/upload_bloc.dart';
 import '../model/app_route.dart';
 import '../screen/history_screen.dart';
 import '../screen/main_screen.dart';
@@ -19,7 +21,9 @@ class AppRouter {
     AppRoute(route: Routes.upload, view: const UploadScreen()),
 
   ];
-  static List allProviders() => [];
+  static List allProviders() => [
+    BlocProvider(create: (context) => UploadBloc()),
+  ];
   static Route<dynamic> generateRoute(RouteSettings settings) {
     return MaterialPageRoute(
       builder: (context) => routes()
